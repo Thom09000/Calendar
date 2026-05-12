@@ -1,0 +1,38 @@
+.card{
+  width: fit-content;
+}
+
+.backgroundOrange:hover, .month, .selected{
+  background-color: orange;
+}
+
+.selected {
+  border-radius: 50%;
+}
+
+.month {
+  height: 3rem;
+  font-size: 2rem;
+}
+
+.grid-7{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.grid-7 div{
+  height: 50px;
+  width: 50px;
+}
+
+.days div{
+  border: solid 1px grey;
+  margin: 3px;
+  transition: all 1s;
+}
+
+.month, .grid-7 div, .days div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
